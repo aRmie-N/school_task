@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head> <body bgcolor="e0b848"
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona pliku</title>
-    <style>
+<html lang="pl-PL">
+ <head>
+  <body bgcolor="e0b848"
+  <meta charset="utf-8">
+  <title>Tabela karty graficzne</title>
+ </head>
+<body> 
+<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+        }
+        .row1 {
+            background-color: lightgreen;
+        }
+        .row2 {
+            background-color: green;
+            color: yellow;
+        }
+        .highlight {
+            color: #0782F5;
+        }
+        .active-row {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .green-text {
+            color: green;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -20,16 +60,64 @@
             color: #333;
         }
         .back-link:hover {
-            background-color: #E0B848;
+            background-color: #9C9227;
         }
+
     </style>
 </head>
 <body>
-    <h1>Strona tabeli</h1>
-    <p>Tutaj będzie tabela</p>
-   
-    
-    <br>
-    <a href="index.html" class="back-link">Wróć</a>
+
+<h1>Tabela karty graficzne</h1>
+
+<table>
+    <tr class="header">
+        <th>Model karty graficznej</th>
+        <th>Pojemność pamięci graficznej</th>
+        <th>Typ pamięci</th>
+        <th>Ilość rdzeni karty graficznej</th>
+    </tr>
+    <tr class="row1">
+        <td>NVIDIA GeForce RTX 5090</td>
+        <td>32 GB</td>
+        <td class="highlight">GDDR7</td>
+        <td>21760</td>
+    </tr>
+    <tr class="row2">
+        <td>AMD Radeon RX 9070 XT</td>
+        <td>16 GB</td>
+        <td class="highlight">GDDR6</td>
+        <td>4096</td>
+    </tr>
+
+    <tr class="row1">
+        <td>NVIDIA GeForce RTX 4090</td>
+        <td>24 GB</td>
+        <td class="highlight">GDDR6X</td>
+        <td>16384</td>
+    </tr>
+    <tr class="row2">
+        <td>NVIDIA GeForce RTX 3090</td>
+        <td>24 GB</td>
+        <td class="highlight">GDDR6X</td>
+        <td>10496</td>
+    </tr>
+    <tr class="row1">
+        <td>NVIDIA GeForce RTX 2080 Ti</td>
+        <td>11 GB</td>
+        <td class="highlight">GDDR6</td>
+        <td>4352</td>
+    </tr>
+    <tr class="row2">
+        <td>NVIDIA GeForce GTX 1660 Ti</td>
+        <td>6 GB</td>
+        <td class="highlight">GDDR6</td>
+        <td>1536</td>
+    </tr>
+ <tr class="active-row">
+       
+
+</table>
+<a href="index.html" class="back-link">Wróć</a>
+
 </body>
 </html>
